@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДЗ 3.2. Числа та рядки</title>
+  </head>
+  <body>
+    <script>
+      const str1 = prompt("Введіть перший рядок:");
+
+      if (str1 === null || str1.trim() === "") {
+        console.log("Перший рядок не введено!");
+      } else {
+        const str2 = prompt("Введіть другий рядок:");
+
+        if (str2 === null || str2.trim() === "") {
+          console.log("Другий рядок не введено!");
+        } else {
+          const str3 = prompt("Введіть третій рядок:");
+
+          if (str3 === null || str3.trim() === "") {
+            console.log("Третій рядок не введено!");
+          } else {
+            // Всі рядки введено → виводимо у довільному порядку
+            console.log(`- Перший рядок: ${str1}; - Другий рядок: ${str2}; - Третій рядок: ${str3}`);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
